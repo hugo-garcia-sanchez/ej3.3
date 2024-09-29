@@ -37,12 +37,3 @@ SELECT Mesa.numJugadores FROM Usuario, Mesa, Relaciones WHERE
 	Usuario.nombre = 'Hugo' AND
 	Usuario.idUsuario = Relaciones.PlayerID AND
 	Mesa.idMesa = Relaciones.MesaId;
-
-
-
-
-
-
-
-
-
