@@ -13,6 +13,9 @@ CREATE TABLE Mesa (
 	idMesa INT PRIMARY KEY NOT NULL,
 	numJugadores INT NOT NULL,
 	numCartas INT NOT NULL
+	FechaHoraFinalizacion DATETIME NOT NULL,
+    	Duracion INTEGER NOT NULL,
+    	Ganador INTEGER NOT NULL,
 )ENGINE = InnoDB;
 
 CREATE TABLE Relaciones (
@@ -22,10 +25,10 @@ FOREIGN KEY (PlayerId) REFERENCES Usuario(idUsuario),
 FOREIGN KEY (MesaId) REFERENCES Mesa(idMesa)
 )ENGINE = InnoDB;
 
-INSERT INTO Usuario VALUES (9,'Hugo','hugo',10);
-INSERT INTO Usuario VALUES (3,'Iker','iker',9);
-INSERT INTO Usuario VALUES (5,'Jordi','jordi',7);
-INSERT INTO Usuario VALUES (7,'Ivan','ivan',13);
+INSERT INTO Usuario VALUES (9,'Hugo','hugo',10,'2023-09-29 18:00:00', 20, 2);
+INSERT INTO Usuario VALUES (3,'Iker','iker',9,'2023-09-2 14:30:00', 15, 1);
+INSERT INTO Usuario VALUES (5,'Jordi','jordi',7,'2023-09-17 17:00:00', 10, 2);
+INSERT INTO Usuario VALUES (7,'Ivan','ivan',13,'2023-09-13 18:00:00', 30, 1);
 
 INSERT INTO Mesa VALUES (1,4,60);
 INSERT INTO Relaciones VALUES (9,1);
