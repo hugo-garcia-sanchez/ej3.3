@@ -32,8 +32,3 @@ INSERT INTO Relaciones VALUES (9,1);
 INSERT INTO Relaciones VALUES (3,1);
 INSERT INTO Relaciones VALUES (5,1);
 INSERT INTO Relaciones VALUES (7,1);
-
-SELECT Mesa.numJugadores FROM Usuario, Mesa, Relaciones WHERE
-	Usuario.nombre = 'Hugo' AND
-	Usuario.idUsuario = Relaciones.PlayerID AND
-	Mesa.idMesa = Relaciones.MesaId;
