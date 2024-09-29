@@ -13,7 +13,7 @@ CREATE TABLE Mesa (
 	idMesa INT PRIMARY KEY NOT NULL,
 	numJugadores INT NOT NULL,
 	numCartas INT NOT NULL
-	FechaHoraFinalizacion DATETIME NOT NULL,
+	FechaHoraFinalizacion VARCHAR(255) NOT NULL,
     	Duracion INTEGER NOT NULL,
     	GanadorID INTEGER NOT NULL,
 )ENGINE = InnoDB;
