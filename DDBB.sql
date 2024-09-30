@@ -30,7 +30,7 @@ INSERT INTO Usuario VALUES (3,'Iker','iker',9);
 INSERT INTO Usuario VALUES (5,'Jordi','jordi',7);
 INSERT INTO Usuario VALUES (7,'Ivan','ivan',13);
 
-INSERT INTO Mesa VALUES (1,4,60,,'2023-09-17 17:00:00', 10, 9);
+INSERT INTO Mesa VALUES (1,4,60,'2023-09-17 17:00:00', 10, 9);
 INSERT INTO Relaciones VALUES (9,1);
 INSERT INTO Relaciones VALUES (3,1);
 INSERT INTO Relaciones VALUES (5,1);
